@@ -1,7 +1,5 @@
 <?php
 // アナグラム
-// 与えられた２つの文字列がアナグラムかどうか判定して返す関数を作成してください。
-// ただし、空白文字は無視するとします。文字列の比較では大文字小文字を区別しないこととします。
 // 例) 
 //  "anagrams" is an anagram of "ARS MAGNA"
     
@@ -47,14 +45,4 @@
         }
         return false;
     }
-    //true
-    var_dump(isAnagrams('anagrams', 'ARS MAGNA'));
-    var_dump(isAnagrams('a nagrams', 'ARS MAGNA'));
-    var_dump(isAnagrams('A nagram s', 'ARS MAGNA'));
-    var_dump(isAnagrams('A nagram s', 'ARS MAGN A'));
-    
-    //false
-    var_dump(isAnagrams('A  s', 'ARS MAGN A'));
-    var_dump(isAnagrams('A', 'csga'));
-    var_dump(isAnagrams('Anagramds', 'ARS MAGN A'));
 ?>
