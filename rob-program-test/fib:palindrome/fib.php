@@ -1,7 +1,7 @@
 <?php
 // Your code here!
 /*
-# Fibonacci number
+Fibonacciの実装
 
 # n(1) = 1
 # n(2) = 1
