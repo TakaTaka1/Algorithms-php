@@ -1,9 +1,7 @@
 <?php
 // Your code here!
 /*
-# 前の数と前の前の数との和からなる数列をフィボナッチ数列といいます。
 # Fibonacci number
-# 1 1 2 3 5 8 13 21 34
 
 # n(1) = 1
 # n(2) = 1
@@ -36,11 +34,4 @@ function fib($n){
 for ($i=1; $i<=10; $i++) {
     print_r(fib($i)."\n");
 }
-// print_r(fib(1)."\n");  // fib(1) -> 1
-// print_r(fib(2)."\n");  // fib(2) -> 1
-// print_r(fib(3)."\n");  // fib(3) -> fib(2) + fib(1) = 2
-// print_r(fib(4)."\n");  // fib(4) -> fib(3) + fib(2) = 3
-// print_r(fib(5)."\n");  // fib(5) -> fib(4) + fib(3) = 5
-
-
 ?>
