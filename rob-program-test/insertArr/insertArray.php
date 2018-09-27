@@ -9,7 +9,6 @@
 $arr =['A'=>'a','B','c'=>'C','D'];
 $num=4;
 
-//exit;
 function addArrElm($inputArr=[], $num, $addWord=""){
     $count=0;
     $tmpArr =[];
@@ -18,8 +17,6 @@ function addArrElm($inputArr=[], $num, $addWord=""){
             if(!is_array($addWord) && ($count===$num || count($inputArr) === $num)){
                 $tmpArr = array_splice($inputArr, $num);
                 $inputArr[] = $addWord;
-                //print_r($inputArr);
-                
                 $inputArr = array_merge($inputArr, $tmpArr);
                 // $inputArr[] = $tmpArr[0];
             }
