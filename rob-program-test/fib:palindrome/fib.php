@@ -1,5 +1,4 @@
 <?php
-// Your code here!
 /*
 Fibonacciの実装
 
@@ -9,14 +8,6 @@ Fibonacciの実装
 # n(4) = 3 = n(3) + n(2) = 2 + 1
 # n(5) = 5 = n(4) + n(3) = 3 + 2
 # n(5) = 8 = n(5) + n(4) = 5 + 3
-
-# n番目のフィボナッチ数列の数を返すFibonacci関数を作成してください。
-
-# Fibonacci(1) => 1
-# Fibonacci(2) => 1
-# Fibonacci(3) => 2 = Fibonacci(2) + Fibonacci(1)
-# Fibonacci(4) => 3 = Fibonacci(3) + Fibonacci(2)
-# Fibonacci(5) => 5 = Fibonacci(4) + Fibonacci(3)
 
 */
 
@@ -34,4 +25,3 @@ function fib($n){
 for ($i=1; $i<=10; $i++) {
     print_r(fib($i)."\n");
 }
-?>

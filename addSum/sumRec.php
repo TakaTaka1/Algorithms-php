@@ -9,5 +9,3 @@ function sumRec($arr, &$add){
         return $add;
 }
 print_r(sumRec($arr, $add));
-?>
-
