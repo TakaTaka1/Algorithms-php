@@ -8,7 +8,7 @@ function primeRange($n, $primeList=[]){
             $primeList[]= $i;
         }
         for($j=2; $j<$n; $j++){
-            if($i%$j===0){
+            if($i%$j === 0){
                 continue;
             }else{
                 $primeList[]=$i;
@@ -20,7 +20,7 @@ function primeRange($n, $primeList=[]){
     for($i=0; $i<count($primeList); $i++){
         $cnt=0;
         if($n%$primeList[$i] === 0){
-           while($n%$primeList[$i] ===0){
+           while($n%$primeList[$i] === 0){
                $tmp = $n/$primeList[$i];
                $cnt++;
                $n = $tmp;
