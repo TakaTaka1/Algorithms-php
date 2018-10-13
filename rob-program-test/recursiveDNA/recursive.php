@@ -14,7 +14,7 @@ function dna($n, $joinWords=""){
    }
 }
 
-dna(3);
+dna(1000000);
 
 
 
