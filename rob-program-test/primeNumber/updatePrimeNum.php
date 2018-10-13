@@ -7,13 +7,10 @@ function primeRange($n, $primeList=[]){
         if($i === 2) {
             $primeList[]= $i;
         }
-        for($j=2; $j<$n; $j++){
-            if($i%$j === 0){
-                continue;
-            }else{
-                $primeList[]=$i;
-            }
-            
+        if($i%2 === 0){
+            continue;
+        }else{
+            $primeList[]=$i;
         }
     }
     $showPrime =[];
