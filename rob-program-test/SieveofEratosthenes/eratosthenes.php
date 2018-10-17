@@ -1,19 +1,21 @@
-<?php 
-
+<?php
 
 function primeNum($n){
-
-    // To pick up in one of $n are primeNum or not 
-    $primeList[] = 2;
-    $tmp = 0;
-    for($i=2; $i<$n; $i++){
-    	if($i%$primeList[0] === 0){
-    		continue;
-    	}
-    	$primeList[] = $i;
+    $lists=[];
+    for($i=2; $i<=$n; $i++){
+        $lists[] = $i;
     }
-    //pending
+
+    // $Listの先頭の値を取得していく
+    $primeLists =[];
+    while($val=array_shift($lists)){
+        $primeLists[] = $val;
+        foreach($lists as $key => $value){
+            if($value%$val === 0){
+                //篩に掛ける
+                unset($lists[$key]);
+            }
+        }
+    }
+    return $primeLists;
 }
-
-
-
