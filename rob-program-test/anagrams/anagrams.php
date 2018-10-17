@@ -22,8 +22,6 @@
         $space =[" ","　"];
         $removeSpaceA = str_replace($space, "", $a);
         $removeSpaceB = str_replace($space, "", $b);
-        // $removeSpaceA = removeSpace($a);
-        // $removeSpaceB = removeSpace($b);
         
         // upper to lower
         $tolowerA = mb_strtolower($removeSpaceA);
