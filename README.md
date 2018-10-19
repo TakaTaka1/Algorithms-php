@@ -1,3 +1,3 @@
 # php-practice
-This repo is for practice of php.  
+This repo is for tutorials of languages.
 Especially, basic algorithms I need to learn.  
