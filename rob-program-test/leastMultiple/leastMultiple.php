@@ -1,4 +1,6 @@
 <?php 
+//(例) 1~4までの最小の倍数は？ -> 12
+
 const target=4;
 $curval = target;
     
