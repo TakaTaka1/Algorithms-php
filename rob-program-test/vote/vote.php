@@ -44,6 +44,7 @@ class Ranking {
        //         if($val === $counter[$pre]){
        //             $ranker[] = $this->rank; 
        //         }else {
+       //             添字のkeyに+1をしてあげる
        //             $this->rank = 1+$key;
        //             $ranker[] = $this->rank;
        //         }
