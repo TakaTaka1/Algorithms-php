@@ -1,32 +1,32 @@
 <?php
-// なんちゃってvalidation classを作成する
 class Validation
 {
 	private $error = [];
 	/**
-	 * 文字数 
+	 * chkLength 
 	 */
-	public function chkLength($posts, $length=0, $type=null){
-		if(!empty($posts)){
-			foreach($posts as $key => $value){
-				if(strlen($posts) < $length) {
-				    $this->error[$key] = "{$length}以上の文字数が必要";
-				    //return $this->showError($this->error);
-					//return false;
-				}else {
-					return true;
+	public function chkLength($value, $length=0, $type=null){
+		if(!empty($value)){
+			//foreach($posts as $key => $value){
+				if(strlen($value) < $length) {
+				    $this->error[$type] = "Too short, you need more than {$length}";
+					return $this->error;
 				}
-			}
+				$this->error[] = null;
+				return $this->error;
+			//}
 		}
 	}
 	public function getError(){
 		return $this->error;
-	}		
+	}	
 }
 
 $test = new Validation();
-$tmp = ['name'=>'test1'];
-$test->chkLength($tmp, 6, 'name');
+$tmp = ['name'=>'test1','password'=>1234];
+$test->chkLength($tmp['name'], 6, 'name');
+//var_dump($test->chkLength($tmp['password'], 3));
 var_dump($test->getError());
+
 
 ?>
