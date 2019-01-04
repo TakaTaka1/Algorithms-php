@@ -10,6 +10,7 @@ function merge_sort_split($arr){
     $left = array_slice($arr, 0 , $mid);
     $right = array_slice($arr, $mid, count($arr));
     $left = merge_sort_split($left);
+    $right = merge_sort_split($right);
     
     return merge_sort_merge($left, $right);
 }
