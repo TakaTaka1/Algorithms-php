@@ -1,5 +1,5 @@
 <?php
-
+// get file
 $handle = fopen ("php://stdin","r");
 fscanf($handle,"%d",$t);
 $nums=[];
