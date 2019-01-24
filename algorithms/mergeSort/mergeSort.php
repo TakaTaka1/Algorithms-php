@@ -17,7 +17,8 @@ function merge_sort_split($arr){
 function merge_sort_merge($left, $right) {
     $result = [];
     while(count($left) && count($right)) {
-        if($left[0] < $right[0]){
+        if($left[0] < $right[0]){ //昇順
+        //if($left[0] > $right[0]){ //降順
             $result[] = array_shift($left);
         }else {
             $result[] = array_shift($right);
