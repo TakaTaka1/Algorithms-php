@@ -44,7 +44,7 @@ class Router
 	}
 
 }	
-$arr =['/user/edit/:id'=>['controller'=>'userPages', 'action' => 'index']];
+$arr =['/user/edit/:id'=>['controller'=>'userPages', 'action' => 'edit']];
 $test = new Router($arr);
 $route = $test->solve('user/edit/1');
 print_r($route);
